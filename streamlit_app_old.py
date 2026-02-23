@@ -90,7 +90,7 @@ if not df.empty:
         symbol = "⬇️"
         if last_Weight - second_last_weight > 0:
             symbol = "⬆️"
-        col3.metric("Latest Weight", f"{last_Weight - second_last_weight}{symbol}")
+        col3.metric("Latest Weight", f"{last_Weight - second_last_weight}")
     col4.metric("Days Active", len(df))
 
     
